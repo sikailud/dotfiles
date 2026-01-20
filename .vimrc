@@ -54,4 +54,3 @@ call plug#end()
 
 " highlight LineNr ctermfg=grey
 silent! colorscheme moonfly
-
