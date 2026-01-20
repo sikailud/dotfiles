@@ -1,7 +1,12 @@
 syntax on
-set clipboard+=unnamedplus
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 set mouse=a
 set vb t_vb=
+set belloff=all
 set noerrorbells
 set novisualbell
 set nobackup
