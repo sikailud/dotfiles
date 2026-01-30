@@ -3,7 +3,7 @@
 git clone --bare git@github.com:sikailud/dotfiles.git $HOME/.dotfiles
 
 function dotfiles {
-   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+  git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
 
 # Checkout and backup existing dotfiles to .dotfiles/backup
@@ -18,4 +18,3 @@ fi
 dotfiles checkout
 
 dotfiles config status.showUntrackedFiles no
-
